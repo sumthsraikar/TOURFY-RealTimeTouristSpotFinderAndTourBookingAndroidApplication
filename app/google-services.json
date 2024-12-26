@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1097094349774",
+    "project_id": "nvidia-536df",
+    "storage_bucket": "nvidia-536df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097094349774:android:3344b385936dc9aa36e19f",
+        "android_client_info": {
+          "package_name": "com.example.nvidia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHQ2mfbBdwY_wI8buC-xRIQs3hBG8xfTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

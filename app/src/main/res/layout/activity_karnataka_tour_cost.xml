@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/lightGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="16dp">
+
+        <!-- Tour Package Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/tourfy_transprents"
+            android:contentDescription="Tour Package Image"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Tour Package Selection Spinner -->
+        <TextView
+            android:id="@+id/tourPackageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Tour Package"
+            android:textSize="18sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/tourPackageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_border"
+            android:popupBackground="@android:color/white"
+            android:importantForAccessibility="yes"/>
+
+        <!-- Date Selection Spinner -->
+        <TextView
+            android:id="@+id/tourDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Tour Date"
+            android:textSize="18sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/tourDateSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_border"
+            android:popupBackground="@android:color/white"
+            android:importantForAccessibility="yes"/>
+
+        <!-- Adults -->
+        <TextView
+            android:id="@+id/adultsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adults"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/adultsInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter number of adults"
+            android:inputType="number"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp"
+            android:importantForAccessibility="yes"/>
+
+        <!-- Children with bed -->
+        <TextView
+            android:id="@+id/childrenWithBedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children (with bed) - 3 to 10 years"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/childrenWithBedInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter number of children with bed"
+            android:inputType="number"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp"/>
+
+        <!-- Children without bed -->
+        <TextView
+            android:id="@+id/childrenWithoutBedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children (without bed) - 3 to 10 years"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/childrenWithoutBedInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter number of children without bed"
+            android:inputType="number"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp"/>
+
+        <!-- Infants -->
+        <TextView
+            android:id="@+id/infantsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Infant (0 to 3 years)"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/infantsInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter number of infants"
+            android:inputType="number"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp"/>
+
+        <!-- Cost Details -->
+        <TextView
+            android:id="@+id/subtotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal: ₹0"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/gstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST @ 5%: ₹0"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/totalCostText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost: ₹0"
+            android:textSize="18sp"
+            android:textColor="@color/primaryDark"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Book Now Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Book Now"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_bg"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:importantForAccessibility="yes"/>
+    </LinearLayout>
+</ScrollView>

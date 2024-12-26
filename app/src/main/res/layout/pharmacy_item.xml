@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/box_background"
+    android:elevation="4dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/pharmacy_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pharmacy Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/pharmacy_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone: 1234567890\nTiming: 9 AM - 9 PM"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp" />
+</LinearLayout>

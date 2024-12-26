@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/tourfy_transprents"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tourfy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- App Description -->
+        <TextView
+            android:id="@+id/app_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tourfy is your personalized travel companion, helping you discover new destinations, plan tours, and explore local attractions with ease."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mission Section -->
+        <TextView
+            android:id="@+id/mission_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Mission"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/mission_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To make travel planning seamless and enjoyable by providing real-time information, personalized recommendations, and accessible resources."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Vision Section -->
+        <TextView
+            android:id="@+id/vision_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Vision"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/vision_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To be the leading travel companion app, inspiring millions to explore and connect with the world."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Team Section -->
+        <TextView
+            android:id="@+id/team_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meet Our Team"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/team_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouri S Kariger   [4GM21IS017]
+                                     Pallavi S M         [4GM21IS031]
+                                     Srujan K S          [4GM21IS050]
+                                     Sumith S Raikar [4GM21IS054]
+"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Contact Information -->
+        <TextView
+            android:id="@+id/contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: support@tourfy.com"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: +91-7795964497"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Version Information -->
+        <TextView
+            android:id="@+id/version_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textSize="14sp"
+            android:textColor="@color/primary"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

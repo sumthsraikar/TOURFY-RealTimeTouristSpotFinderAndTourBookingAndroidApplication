@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions for accessing internet and notifications -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:targetApi="33" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Tourfy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nvidia"
+        tools:targetApi="31">
+        <activity
+            android:name=".RestaurantsNearby"
+            android:exported="false" />
+        <activity
+            android:name=".HotelNearby"
+            android:exported="false" />
+        <activity
+            android:name=".PharmaciesNearby"
+            android:exported="false" />
+        <activity
+            android:name=".ATMsNearby"
+            android:exported="false" />
+        <activity
+            android:name=".Nearbyplaces"
+            android:exported="false" />
+        <activity
+            android:name=".ATourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AndharaPradeshTourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TamilNaduTourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MTourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaharshtraTourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KeralaTourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoaTourDetailsActivity"
+            android:exported="false" /> <!-- Firebase Messaging Service -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- Activity Declaration -->
+        <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
+            android:name=".karnatakaTourDetailsActivity7"
+            android:exported="false" />
+        <activity
+            android:name=".karnatakaTourDetailsActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".karnatakaTourDetailsActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".karnatakaTourDetailsActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".karnatakaTourDetailsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".FamousLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".karnataka_tour_costActivity"
+            android:exported="false" />
+        <activity
+            android:name=".karnatakaTourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".andhra_pradeshTour"
+            android:exported="false" />
+        <activity
+            android:name=".goaTour"
+            android:exported="false" />
+        <activity
+            android:name=".tamil_naduTour"
+            android:exported="false" />
+        <activity
+            android:name=".keralaTour"
+            android:exported="false" />
+        <activity
+            android:name=".maharashtraTour"
+            android:exported="false" />
+        <activity
+            android:name=".karnatakaTour"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDibv5pTUXkdoY82-hEqZmKohpRpt8UcSw" /> <!-- Replace with your actual API key -->
+        <!-- Firebase Configuration -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default_channel" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/tourfy_transprents" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/lightGray" /> <!-- Preloaded fonts -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

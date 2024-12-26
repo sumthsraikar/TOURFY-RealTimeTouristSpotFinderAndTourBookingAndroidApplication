@@ -1,0 +1,671 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/lavender"
+        android:elevation="4dp"
+        android:title="Tour Packages"
+        app:titleTextColor="@color/white"
+        android:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <!-- ScrollView wrapping the LinearLayout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+        <!-- LinearLayout to stack views vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="8dp">
+
+            <!-- Tour 1: Karnataka Tour -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/karnatakaTour"
+                android:layout_margin="8dp"
+                android:radius="160dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="19dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:id="@+id/tourImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dakshanakannadalogo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tourTitle"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Dakshina Kannada Tour"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tourdays"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tourfy_transprents"
+                            android:contentDescription="Tour Logo"
+                            android:text="6 Days"
+                            android:letterSpacing="0.1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tourDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Explore Sridhar Ashram, Keladi Rameshwaram..."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/calendar_svgrepo_com"
+                            android:contentDescription="Calendar Icon" />
+
+                        <TextView
+                            android:id="@+id/tourDates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="07 Dec 2024 - 14 Dec 2024 - 25 Dec 2024 .."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/tourPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹10,500"
+                            android:layout_marginStart="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tourDetailsButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="116dp"
+                            android:backgroundTint="@color/lavender"
+                            android:text="Tour Details"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Add other 5 tour details by following the same structure -->
+
+            <!-- Tour 2: Badami - Bijapur - Ganagapur Tour -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/badamiBijapurTour"
+                android:layout_margin="8dp"
+                android:radius="160dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="19dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:id="@+id/tourImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/badamibijapurlogo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tourTitle2"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Badami– Bijapur - Ganagapur Tour"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tourdays2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tourfy_transprents"
+                            android:contentDescription="Tour Logo"
+                            android:text="4 Days"
+                            android:letterSpacing="0.1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tourDescription2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Pattadakal Mallikarjuna, Virupaksha Temple,..."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/calendar_svgrepo_com"
+                            android:contentDescription="Calendar Icon" />
+
+                        <TextView
+                            android:id="@+id/tourDates2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="07 Dec 2024 - 14 Dec 2024 - 25 Dec 2024 .."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/tourPrice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹9,000"
+                            android:layout_marginStart="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tourDetailsButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="116dp"
+                            android:backgroundTint="@color/lavender"
+                            android:text="Tour Details"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tour 2: Badami - Bijapur - Ganagapur Tour -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DandeliTour"
+                android:layout_margin="8dp"
+                android:radius="160dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="19dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:id="@+id/tourImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dandalilogo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tourTitle3"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Dandeli Tour"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tourdays3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tourfy_transprents"
+                            android:contentDescription="Tour Logo"
+                            android:text="2 Days"
+                            android:letterSpacing="0.1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tourDescription3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Dandeli Wild Life, Supa Dam, Kali River,.."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/calendar_svgrepo_com"
+                            android:contentDescription="Calendar Icon" />
+
+                        <TextView
+                            android:id="@+id/tourDates3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="07 Dec 2024 - 14 Dec 2024 - 25 Dec 2024 .."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/tourPrice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹6,000"
+                            android:layout_marginStart="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tourDetailsButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="116dp"
+                            android:backgroundTint="@color/lavender"
+                            android:text="Tour Details"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tour 4: Jog falls Tour Tour -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/JogfallsTour"
+                android:layout_margin="8dp"
+                android:radius="160dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="19dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:id="@+id/tourImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jogfallslogo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tourTitle4"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Jog falls Tour"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tourdays4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tourfy_transprents"
+                            android:contentDescription="Tour Logo"
+                            android:text="4 Days"
+                            android:letterSpacing="0.1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tourDescription4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Sridhar Ashrama, Jog Falls"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/calendar_svgrepo_com"
+                            android:contentDescription="Calendar Icon" />
+
+                        <TextView
+                            android:id="@+id/tourDates4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="07 Dec 2024 - 14 Dec 2024 - 25 Dec 2024 .."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/tourPrice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹2,600"
+                            android:layout_marginStart="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tourDetailsButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="116dp"
+                            android:backgroundTint="@color/lavender"
+                            android:text="Tour Details"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tour 2: ChikkamagaluruB Tour -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chikkamagaluruTour"
+                android:layout_margin="8dp"
+                android:radius="160dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="19dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:id="@+id/tourImage5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chikkamagalurulogo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tourTitle5"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Chikkamagaluru Tour"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tourdays5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tourfy_transprents"
+                            android:contentDescription="Tour Logo"
+                            android:text="1 Days"
+                            android:letterSpacing="0.1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tourDescription5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Belur Chennakeshava , Halebidu Hoysaleshwara Temple,..
+    "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/calendar_svgrepo_com"
+                            android:contentDescription="Calendar Icon" />
+
+                        <TextView
+                            android:id="@+id/tourDates5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="07 Dec 2024 - 14 Dec 2024 - 25 Dec 2024 .."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/tourPrice5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹9,000"
+                            android:layout_marginStart="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tourDetailsButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="116dp"
+                            android:backgroundTint="@color/lavender"
+                            android:text="Tour Details"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tour 6: Mysore - Coorg Tour Tour -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MysoreCoorgTour"
+                android:layout_margin="8dp"
+                android:radius="160dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="19dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:id="@+id/tourImage6"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mysorecoorglogo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tourTitle6"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mysore - Coorg Tour"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tourdays6"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tourfy_transprents"
+                            android:contentDescription="Tour Logo"
+                            android:text="3 Days"
+                            android:letterSpacing="0.1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tourDescription6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Chamundi Hills, Mysore Zoo, Mysore Palace,.."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/calendar_svgrepo_com"
+                            android:contentDescription="Calendar Icon" />
+
+                        <TextView
+                            android:id="@+id/tourDates6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="07 Dec 2024 - 14 Dec 2024 - 25 Dec 2024 .."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/tourPrice6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹9,000"
+                            android:layout_marginStart="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tourDetailsButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="116dp"
+                            android:backgroundTint="@color/lavender"
+                            android:text="Tour Details"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        <!-- Continue adding the remaining 3 tours in similar fashion -->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

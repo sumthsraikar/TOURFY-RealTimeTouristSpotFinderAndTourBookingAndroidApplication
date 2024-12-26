@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="flashNewsTextView" type="id" />
+    <item name="booknowbuton22" type="id" />
+    <item name="map" type="id" />
+</resources>
